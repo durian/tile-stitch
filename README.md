@@ -7,9 +7,19 @@ The tiles should come from a web map service in PNG or JPEG format, and will be 
 
 Optionally, a separate worldfile with georeferencing data can be written.
 
+X-Plane
+-------
+
+The `-x` option creates a map definition file for the X-Trident Harrier and Tornado aicraft. It will have the same
+name as the output PNG file, with the `png` suffix changed to `map`.
+
 Examples
 --------
 
+A map around ESTA airport for X-Plane:
+
+    $ ./stitch -o map_ESTA_z11.png -x -- 56.0 12.4 56.5 13.5 11 http://a.tile.openstreetmap.org/{z}/{x}/{y}.png
+    
 To get standard OpenStreetMap tiles at zoom level 10 for the area of the Exploratorium's Bay Model video projection:
 
     $ ./stitch -o baymodel.png -- 37.371794 -122.917099 38.226853 -121.564407 10 http://a.tile.openstreetmap.org/{z}/{x}/{y}.png
