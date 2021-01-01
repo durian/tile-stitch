@@ -299,7 +299,9 @@ int main(int argc, char **argv) {
     fprintf(stderr, "==Zoom Level: %u\n", zoom);
     fprintf(stderr, "==Upper Left Tile: x:%u y:%u\n", tx1, ty2);
     fprintf(stderr, "==Lower Right Tile: x:%u y:%u\n", tx2, ty1);
-
+    unsigned int num_tiles = (ty2-ty1+1) * (tx2-tx1+1);
+    fprintf(stderr, "==Number of tiles: %u\n",num_tiles);
+      
     unsigned int xa = ((x1 >> (32 - (zoom + 8))) & 0xFF) * tilesize / 256;
     unsigned int ya = ((y1 >> (32 - (zoom + 8))) & 0xFF) * tilesize / 256;
 
