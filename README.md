@@ -20,6 +20,10 @@ A map around ESTA airport for X-Plane:
 
     $ ./stitch -o map_ESTA_z11.png -x -- 56.0 12.4 56.5 13.5 11 http://a.tile.openstreetmap.org/{z}/{x}/{y}.png
 
+Around Montreal (note the --):
+
+    $ ./stitch -o CYUL10.png -c -- 45.46590974 -73.74298096 2400 2400 10 http://a.tile.openstreetmap.org/{z}/{x}/{y}.png
+    
 A bash script has been provided to make map making a bit easier. It loops over a number
 of zoom levels and creates a 1280x1280 map around a user specified centre.
 
