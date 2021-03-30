@@ -24,6 +24,10 @@ Map centred around LOWI, 1280x1280 pixels.
 
     $ ./stitch -o map_LOWI_z11.png -x -c 47.2602 11.3438 1280 1280 11 http://a.tile.openstreetmap.org/{z}/{x}/{y}.png
 
+Around Montreal (note the --):
+
+    $ ./stitch -o CYUL10.png -c -- 45.4659097 -73.7429809 2400 2400 10 http://a.tile.openstreetmap.org/{z}/{x}/{y}.png
+    
 A bash script has been provided to make map making a bit easier. It loops over a number
 of zoom levels and creates a 1280x1280 map around a user specified centre.
 
