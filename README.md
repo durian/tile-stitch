@@ -20,8 +20,13 @@ A map around ESTA airport for X-Plane:
 
     $ ./stitch -o map_ESTA_z11.png -x -- 56.0 12.4 56.5 13.5 11 http://a.tile.openstreetmap.org/{z}/{x}/{y}.png
 
+Map centred around LOWI, 1280x1280 pixels.
+
+    $ ./stitch -o map_LOWI_z11.png -x -c 47.2602 11.3438 1280 1280 11 http://a.tile.openstreetmap.org/{z}/{x}/{y}.png
+
 A bash script has been provided to make map making a bit easier. It loops over a number
 of zoom levels and creates a 1280x1280 map around a user specified centre.
+
 
 To get standard OpenStreetMap tiles at zoom level 10 for the area of the Exploratorium's Bay Model video projection:
 
